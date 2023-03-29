@@ -12,3 +12,9 @@ string status(float r, float n) {
 		return "Ditolak";
 }
 
+string nama[20];
+float nilM[20], nilB[20], ratarata[20];
+int jumlahditerima = 0;
+int jumlahditolak = 0;
+
+
