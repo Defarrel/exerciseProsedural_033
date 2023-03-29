@@ -13,8 +13,10 @@ string status(float r, float n) {
 }
 
 string nama[20];
-float nilM[20], nilB[20], ratarata[20];
+float nilM[20], nilB[20], rataNil[20];
 int jumlahditerima = 0;
 int jumlahditolak = 0;
 
+void input() {
 
+}
