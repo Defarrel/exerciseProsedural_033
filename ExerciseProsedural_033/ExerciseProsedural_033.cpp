@@ -51,3 +51,10 @@ void kandidatditerima() {
 	}
 
 }
+
+int main() {
+	void input();
+	void tapilandata();
+	void kandidatditerima();
+	return 0;
+}
