@@ -33,11 +33,21 @@ void input() {
 }
 
 void tampilandata() {
-
 	cout << "===================================";
 	cout << "Nama" << "\t\t" << "Status" << endl;
 	cout << "===================================";
 	for (int i = 0; i < 20; i++) {
 		cout << nama[i] << "\t\t" << status(rataNil[i], nilM[i]);
 	}
+}
+
+void kandidatditerima() {
+	for (int i = 0; i < 20; i++) {
+		if (status(rataNil[i], nilM[i]) == "Diterima"){
+			jumlahditerima++;
+		}else {
+			jumlahditolak++;
+		}
+	}
+
 }
