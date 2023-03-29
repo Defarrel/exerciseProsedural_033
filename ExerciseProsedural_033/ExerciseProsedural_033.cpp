@@ -32,3 +32,12 @@ void input() {
 	} while (i < 20);
 }
 
+void tampilandata() {
+
+	cout << "===================================";
+	cout << "Nama" << "\t\t" << "Status" << endl;
+	cout << "===================================";
+	for (int i = 0; i < 20; i++) {
+		cout << nama[i] << "\t\t" << status(rataNil[i], nilM[i]);
+	}
+}
