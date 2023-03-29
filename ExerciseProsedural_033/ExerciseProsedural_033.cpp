@@ -16,8 +16,8 @@ string status(double r, double n) {
     }
 }
 
-string nama[2];
-double nilM[2], nilB[2], rataNil[2];
+string nama[20];
+double nilM[20], nilB[20], rataNil[20];
 
 void inputdata() {
     int i = 0;
@@ -31,7 +31,7 @@ void inputdata() {
 
         rataNil[i] = ratarata(nilM[i], nilB[i]);
         i++;
-    } while (i < 2);
+    } while (i < 20);
 }
 
 
@@ -42,13 +42,14 @@ void tampilandata() {
     for (int i = 0; i < 20; i++) {
         cout << nama[i] << "\t\t" << status(rataNil[i], nilM[i]) << endl;
 
+
     }
 }
 
 void kandidatditerima() {
     int jumlahDiterima = 0;
     int jumlahDitolak = 0;
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 20; i++) {
         if (status(rataNil[i], nilM[i]) == "Diterima") {
             jumlahDiterima++;
         }
@@ -67,5 +68,4 @@ int main() {
     tampilandata();
     kandidatditerima();
     return 0;
-
 }
