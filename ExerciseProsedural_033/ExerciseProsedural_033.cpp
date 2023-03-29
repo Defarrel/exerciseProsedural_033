@@ -18,5 +18,17 @@ int jumlahditerima = 0;
 int jumlahditolak = 0;
 
 void input() {
+	int i = 0;
+	do {
+		cout << "Masukan nama Mahasiswa: ";
+		cin >> nama[i];
+		cout << "Masukan nilai matematika: ";
+		cin >> nilM[i];
+		cout << "Masukan nilai B. Inggris: ";
+		cin >> nilB[i];
 
+		cout << ratarata(nilM[i], nilB[i]);
+		i++;
+	} while (i < 20);
 }
+
